@@ -1,12 +1,12 @@
 ## Moderation API
 
-This API can be used for moderating text and images. It makess use of Clarifai and MonkeyLearn. Two API that can be uses for image and text analysiss resspectively.
+This API can be used for moderating text and images. It makess use of Clarifai and MonkeyLearn. Two API's that can be used for image and text analysiss respectively.
 
 ### Analysis models
-https://www.clarifai.com/model-gallery
+IMAGE: https://www.clarifai.com/model-gallery
 
-https://monkeylearn.com/blog/public-and-ready-to-use-modules/
-# Deployed verssion
+TEXT: https://monkeylearn.com/blog/public-and-ready-to-use-modules/
+# Deployed version
 
 https://safe-for-work-api.herokuapp.com/
 
@@ -25,9 +25,10 @@ PARAMETERS
 # Samples
 
 ![](./postman_moderation_api.png)
-## Text aanalysis
+## Text analysis
 
 REQUEST: `{"analysis": {"resource": "Are you fucking stupid???", "category": "text"}}`
+
 RESPONSE:
 ```json
 {
@@ -69,6 +70,7 @@ RESPONSE:
 ## Image
 
 REQUEST: `{"analysis": {"resource": "https://i.dailymail.co.uk/i/pix/2012/02/06/article-0-0CD054CA00000578-89_1024x615_large.jpg", "category": "image"}}`
+
 RESPONSE:
 ```json
 {
@@ -89,7 +91,7 @@ RESPONSE:
 ```
 
 ```json
-
+// add some image that is Not Suitable For Work
 ```
 # Challenge
 
