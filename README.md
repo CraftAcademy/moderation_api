@@ -89,10 +89,24 @@ RESPONSE:
     "updated_at": "2021-02-07T21:46:52.627Z"
 }
 ```
+REQUEST: `{"analysis": {"resource": "https://images.unsplash.com/photo-1572648414902-be106c6c826e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVyZGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", "category": "image"}}`
 
+RESPONSE: 
 ```json
-// add some image that is Not Suitable For Work
+{
+    "id": 22,
+    "category": "image",
+    "resource": "https://images.unsplash.com/photo-1572648414902-be106c6c826e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8bXVyZGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "results": {
+        "gore": "0.99999726",
+        "safe": "1.0526162e-06",
+        "suggestive": "1.0247506e-06",
+        "drug": "3.8188062e-07",
+        "explicit": "3.2897844e-07"
+    },
+    "request_ip": "185.176.246.65",
+    "created_at": "2021-02-10T15:28:50.575Z",
+    "updated_at": "2021-02-10T15:28:50.575Z"
+}
 ```
-# Challenge
 
-??
